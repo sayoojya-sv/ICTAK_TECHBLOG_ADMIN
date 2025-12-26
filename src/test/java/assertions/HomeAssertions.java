@@ -25,6 +25,10 @@ public class HomeAssertions {
 	public boolean isHomePageDisplayed() {
     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h2[text()='WELCOME TO ICTAK TECH BLOG']"))).isDisplayed();
-}
+    }
+	
+	public boolean isdeletemsgDisplayed() {
+		return driver.findElement(By.name("post deleted")).isDisplayed();
+	}
 
 }

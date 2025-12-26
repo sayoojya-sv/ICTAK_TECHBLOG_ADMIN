@@ -46,11 +46,12 @@ public class AdminContactUs {
 
 	
 	public void sndBtn() {
-	    WebElement sendBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='submit']")));
+		WebElement sendBtn = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='SEND']")));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 
-	    JavascriptExecutor js = (JavascriptExecutor) driver;
-	    js.executeScript("arguments[0].scrollIntoView({block:'center'});", sendBtn);
-	    js.executeScript("arguments[0].click();", sendBtn);
+		js.executeScript("arguments[0].scrollIntoView({block:'center'});", sendBtn); // scroll into view
+
+		js.executeScript("arguments[0].click();", sendBtn); // click using JS
 
 	    wait.until(ExpectedConditions.alertIsPresent());
 	    driver.switchTo().alert().accept();

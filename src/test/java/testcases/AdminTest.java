@@ -63,7 +63,8 @@ public class AdminTest extends TestBase{
 	@Test(priority=1)
 	public void loginTest() throws IOException {
 		ad_log.dropDown();
-		ad_log.loginPage("admin", "1234");
+		ad_log.loginEmail("admin");
+		ad_log.loginPass("1234");
 //		ad_log.loginPage(ExcelUtility.readExcel(0, 0), ExcelUtility.readExcel(0, 1));
 		ad_log.subBtn();
 		Assert.assertTrue(log_assert.isAdminHomePageDisplayed());
@@ -75,10 +76,14 @@ public class AdminTest extends TestBase{
 		Assert.assertTrue(hom_assert.isHomePageDisplayed());
 		ad_hom.clickEdit();
 		ad_hom.clkDelete();
-		
 	}
 	
 	@Test(priority=3)
+	public void deletemsgDisplayTest() {
+		Assert.assertTrue(hom_assert.isdeletemsgDisplayed());
+	}
+	
+	@Test(priority=4)
 	public void allPostTest() {
 		ad_allPost.allPosts();
 		Assert.assertTrue(allp_assert.isallPostDisplayed());
@@ -86,13 +91,13 @@ public class AdminTest extends TestBase{
 		ad_allPost.clkDelete();
 	}
 	
-	@Test(priority=4)
+	@Test(priority=5)
 	public void myPostTest() {
 		ad_mypost.myPostclk();
 		Assert.assertTrue(mypst_assert.isMyPostDisplayed());
 	}
 	
-	@Test(priority=5)
+	@Test(priority=6)
 	public void myActionsTest() {
 		ad_act.approvePost("Ok!!");
 		ad_act.rejPost("Need improvement");
@@ -101,19 +106,19 @@ public class AdminTest extends TestBase{
 		ad_act.newPost("Flower", "https://getwallpapers.com/wallpaper/full/b/7/5/487484.jpg" , "Tulips!!");
 	}
 	
-	@Test(priority=6)
+	@Test(priority=7)
 	public void categoryTest() {
 		ad_cat.cate_gory();
 		ad_cat.selCat();
 	}
 	
-	@Test(priority=7)
+	@Test(priority=8)
 	public void aboutUsTest() {
 		ad_about.ab_out();
 		Assert.assertTrue(ad_about.isAboutUsDisplayed());
 	}
 	
-	@Test(priority=8)
+	@Test(priority=9)
 	public void contactUsTest() {
 		ad_us.clk_contact();
 		Assert.assertTrue(us_assert.isContactUsDisplayed());
@@ -121,41 +126,44 @@ public class AdminTest extends TestBase{
 		ad_us.sndBtn();
 	}
 	
-	@Test(priority=9)
+	@Test(priority=10)
 	public void iconTest() {
 		ad_us.clk_contact();
 		ad_us.clickIcon();
 		Assert.assertTrue(driver.getCurrentUrl().contains("github"));
 	}
 	
-	@Test(priority=10)
+	@Test(priority=11)
 	public void logOutTest() {
 		log_out.logOut();
 	}
 	
 	
-	@Test(priority=11)
+	@Test(priority=12)
 	public void invalidLoginTest() {
 		ad_log.dropDown();
-		ad_log.loginPage("admi", "123");
+		ad_log.loginEmail("admi");
+		ad_log.loginPass("123");
 		ad_log.subBtn();
 		String actual = log_assert.getAlertText();
 	    Assert.assertEquals(actual, "User not found");
 
 	}
 	
-	@Test(priority=12)
+	@Test(priority=13)
 	public void emptyPassLogin() {
+		ad_hom.admHome();
 		ad_log.dropDown();
-		ad_log.loginPage("admi",null);
+		ad_log.loginEmail("admi");
 		ad_log.subBtn();
 		Assert.assertTrue(log_assert.isemptyPassDisplayed());
 	}
 	
-	@Test(priority=13)
+	@Test(priority=14)
 	public void emptyfieldLogin() {
+		ad_hom.admHome();
 		ad_log.dropDown();
-        ad_log.loginPage("", "");
+//        ad_log.loginPage("","");
 		ad_log.subBtn();
 		Assert.assertTrue(log_assert.isemptymessagedisplayed());
 

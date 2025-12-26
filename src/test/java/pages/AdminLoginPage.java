@@ -25,11 +25,12 @@ public class AdminLoginPage {
 		log.click();
 	}
 	
-	public void loginPage(String e_mail , String passWord) {
+	public void loginEmail(String e_mail) {
 		WebElement eMail=driver.findElement(By.id("user"));
 		eMail.clear();
 		eMail.sendKeys(e_mail);
-		
+	}
+	public void loginPass(String passWord) {
 		WebElement passw=driver.findElement(By.id("pwd"));
 		passw.clear();
 		passw.sendKeys(passWord);

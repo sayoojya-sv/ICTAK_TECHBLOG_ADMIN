@@ -51,9 +51,6 @@ public class AdminHomePage {
     	
     }
 	
-	public void logOut() {
-		WebElement adlog=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='logout']")));
-		adlog.click();
-	}
+	
 
 }
