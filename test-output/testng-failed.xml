@@ -5,23 +5,12 @@
     <classes>
       <class name="testcases.AdminTest">
         <methods>
-          <include name="allPostTest"/>
-          <include name="aboutUsTest"/>
-          <include name="myPostTest"/>
-          <include name="logOutTest"/>
-          <include name="contactUsTest"/>
-          <include name="iconTest"/>
-          <include name="emptyfieldLogin"/>
-          <include name="setUp"/>
-          <include name="myActionsTest"/>
-          <include name="invalidLoginTest"/>
           <include name="deletemsgDisplayTest"/>
-          <include name="loginTest"/>
+          <include name="contactUsTest"/>
           <include name="objectInit"/>
+          <include name="iconTest"/>
           <include name="tearDown"/>
-          <include name="emptyPassLogin"/>
-          <include name="categoryTest"/>
-          <include name="homepageTest"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- testcases.AdminTest -->
     </classes>
