@@ -69,104 +69,104 @@ public class AdminTest extends TestBase{
 		ad_log.subBtn();
 		Assert.assertTrue(log_assert.isAdminHomePageDisplayed());
 	}
+
+	@Test(priority=2)
+	public void homepageTest() {
+		ad_hom.admHome();
+		Assert.assertTrue(hom_assert.isHomePageDisplayed());
+		ad_hom.clickEdit();
+		ad_hom.clkDelete();
+	}
 	
-//	@Test(priority=2)
-//	public void homepageTest() {
-//		ad_hom.admHome();
-//		Assert.assertTrue(hom_assert.isHomePageDisplayed());
-//		ad_hom.clickEdit();
-//		ad_hom.clkDelete();
-//	}
-//	
-//	@Test(priority=3)
-//	public void deletemsgDisplayTest() {
-//		Assert.assertTrue(hom_assert.isdeletemsgDisplayed());
-//	}
-//	
-//	@Test(priority=4)
-//	public void allPostTest() {
-//		ad_allPost.allPosts();
-//		Assert.assertTrue(allp_assert.isallPostDisplayed());
-//		ad_allPost.clickEdit();
-//		ad_allPost.clkDelete();
-//	}
-//	
-//	@Test(priority=5)
-//	public void myPostTest() {
-//		ad_mypost.myPostclk();
-//		Assert.assertTrue(mypst_assert.isMyPostDisplayed());
-//	}
-//	
-//	@Test(priority=6)
-//	public void myActionsTest() {
-//		ad_act.approvePost("Ok!!");
-//		ad_act.rejPost("Need improvement");
-//		ad_act.addCat("LIVEDEM");
-//		ad_act.remCat();
-//		ad_act.newPost("Flower", "https://getwallpapers.com/wallpaper/full/b/7/5/487484.jpg" , "Tulips!!");
-//	}
-//	
-//	@Test(priority=7)
-//	public void categoryTest() {
-//		ad_cat.cate_gory();
-//		ad_cat.selCat();
-//	}
-//	
-//	@Test(priority=8)
-//	public void aboutUsTest() {
-//		ad_about.ab_out();
-//		Assert.assertTrue(ad_about.isAboutUsDisplayed());
-//	}
-//	
-//	@Test(priority=9)
-//	public void contactUsTest() {
-//		ad_us.clk_contact();
-//		Assert.assertTrue(us_assert.isContactUsDisplayed());
-//		ad_us.inp_value("abc", "abc@gmail.com", "abcd");
-//		ad_us.sndBtn();
-//	}
-//	
-//	@Test(priority=10)
-//	public void iconTest() {
-//		ad_us.clk_contact();
-//		ad_us.clickIcon();
-//		Assert.assertTrue(driver.getCurrentUrl().contains("github"));
-//	}
-//	
-//	@Test(priority=11)
-//	public void logOutTest() {
-//		log_out.logOut();
-//	}
-//	
-//	
-//	@Test(priority=12)
-//	public void invalidLoginTest() {
-//		ad_log.dropDown();
-//		ad_log.loginEmail("admi");
-//		ad_log.loginPass("123");
-//		ad_log.subBtn();
-//		String actual = log_assert.getAlertText();
-//	    Assert.assertEquals(actual, "User not found");
-//
-//	}
-//	
-//	@Test(priority=13)
-//	public void emptyPassLogin() {
-//		ad_hom.admHome();
-//		ad_log.dropDown();
-//		ad_log.loginEmail("admi");
-//		ad_log.subBtn();
-//		Assert.assertTrue(log_assert.isemptyPassDisplayed());
-//	}
-//	
-//	@Test(priority=14)
-//	public void emptyfieldLogin() {
-//		ad_hom.admHome();
-//		ad_log.dropDown();
-////        ad_log.loginPage("","");
-//		ad_log.subBtn();
-//		Assert.assertTrue(log_assert.isemptymessagedisplayed());
-//
-//	}
-//}
+	@Test(priority=3)
+	public void deletemsgDisplayTest() {
+		Assert.assertTrue(hom_assert.isdeletemsgDisplayed());
+	}
+	
+	@Test(priority=4)
+	public void allPostTest() {
+		ad_allPost.allPosts();
+		Assert.assertTrue(allp_assert.isallPostDisplayed());
+		ad_allPost.clickEdit();
+		ad_allPost.clkDelete();
+	}
+	
+	@Test(priority=5)
+	public void myPostTest() {
+		ad_mypost.myPostclk();
+		Assert.assertTrue(mypst_assert.isMyPostDisplayed());
+	}
+	
+	@Test(priority=6)
+	public void myActionsTest() {
+		ad_act.approvePost("Ok!!");
+		ad_act.rejPost("Need improvement");
+		ad_act.addCat("LIVEDEM");
+		ad_act.remCat();
+		ad_act.newPost("Flower", "https://getwallpapers.com/wallpaper/full/b/7/5/487484.jpg" , "Tulips!!");
+	}
+	
+	@Test(priority=7)
+	public void categoryTest() {
+		ad_cat.cate_gory();
+		ad_cat.selCat();
+	}
+	
+	@Test(priority=8)
+	public void aboutUsTest() {
+		ad_about.ab_out();
+		Assert.assertTrue(ad_about.isAboutUsDisplayed());
+	}
+	
+	@Test(priority=9)
+	public void contactUsTest() {
+		ad_us.clk_contact();
+		Assert.assertTrue(us_assert.isContactUsDisplayed());
+		ad_us.inp_value("abc", "abc@gmail.com", "abcd");
+		ad_us.sndBtn();
+	}
+	
+	@Test(priority=10)
+	public void iconTest() {
+		ad_us.clk_contact();
+		ad_us.clickIcon();
+		Assert.assertTrue(driver.getCurrentUrl().contains("github"));
+	}
+	
+	@Test(priority=11)
+	public void logOutTest() {
+		log_out.logOut();
+	}
+	
+	
+	@Test(priority=12)
+	public void invalidLoginTest() {
+		ad_log.dropDown();
+		ad_log.loginEmail("admi");
+		ad_log.loginPass("123");
+		ad_log.subBtn();
+		String actual = log_assert.getAlertText();
+	    Assert.assertEquals(actual, "User not found");
+
+	}
+	
+	@Test(priority=13)
+	public void emptyPassLogin() {
+		ad_hom.admHome();
+		ad_log.dropDown();
+		ad_log.loginEmail("admi");
+		ad_log.subBtn();
+		Assert.assertTrue(log_assert.isemptyPassDisplayed());
+	}
+	
+	@Test(priority=14)
+	public void emptyfieldLogin() {
+		ad_hom.admHome();
+		ad_log.dropDown();
+//        ad_log.loginPage("","");
+		ad_log.subBtn();
+		Assert.assertTrue(log_assert.isemptymessagedisplayed());
+
+	}
+}
 
