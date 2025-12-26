@@ -19,6 +19,7 @@ public class AdminLogout {
 		wait=new WebDriverWait(driver,Duration.ofSeconds(20));
 	}
 	
+	//loggin out
 	public void logOut() {
 
 	    WebElement log = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[text()='logout']")));
