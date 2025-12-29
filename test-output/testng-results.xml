@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="14" passed="11" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-26T23:39:24 IST" name="Default suite" finished-at="2025-12-26T23:41:46 IST" duration-ms="142274">
+  <suite started-at="2025-12-27T01:54:09 IST" name="Default suite" finished-at="2025-12-27T01:57:39 IST" duration-ms="210860">
     <groups>
     </groups>
-    <test started-at="2025-12-26T23:39:24 IST" name="Default test" finished-at="2025-12-26T23:41:46 IST" duration-ms="142274">
+    <test started-at="2025-12-27T01:54:09 IST" name="Default test" finished-at="2025-12-27T01:57:39 IST" duration-ms="210860">
       <class name="testcases.AdminTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-26T23:39:24 IST" name="setUp" finished-at="2025-12-26T23:39:31 IST" duration-ms="7311" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-27T01:54:09 IST" name="setUp" finished-at="2025-12-27T01:54:57 IST" duration-ms="48198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="objectInit()[pri:0, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-26T23:39:31 IST" name="objectInit" finished-at="2025-12-26T23:39:31 IST" duration-ms="56" status="PASS">
+        <test-method is-config="true" signature="objectInit()[pri:0, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-27T01:54:57 IST" name="objectInit" finished-at="2025-12-27T01:54:57 IST" duration-ms="69" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- objectInit -->
-        <test-method signature="loginTest()[pri:1, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-26T23:39:31 IST" name="loginTest" finished-at="2025-12-26T23:39:37 IST" duration-ms="5978" status="PASS">
+        <test-method signature="loginTest()[pri:1, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-27T01:54:57 IST" name="loginTest" finished-at="2025-12-27T01:54:59 IST" duration-ms="2259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="homepageTest()[pri:2, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-26T23:39:37 IST" name="homepageTest" finished-at="2025-12-26T23:39:44 IST" duration-ms="6871" status="PASS">
+        <test-method signature="homepageTest()[pri:2, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-27T01:54:59 IST" name="homepageTest" finished-at="2025-12-27T01:55:10 IST" duration-ms="10648" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homepageTest -->
-        <test-method signature="deletemsgDisplayTest()[pri:3, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-26T23:39:44 IST" name="deletemsgDisplayTest" finished-at="2025-12-26T23:40:04 IST" duration-ms="20056" status="FAIL">
+        <test-method signature="deletemsgDisplayTest()[pri:3, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-27T01:55:10 IST" name="deletemsgDisplayTest" finished-at="2025-12-27T01:55:30 IST" duration-ms="20085" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='post deleted']"}
@@ -32,9 +32,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cedd98f1a51595bff9ed660ecb26beeb, findElement {value=post deleted, using=name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\sayoojya\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57103}, goog:processID: 3308, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57103/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cedd98f1a51595bff9ed660ecb26beeb]]>
+Command: [f9f5a53514d182965574ce4409d2a7a6, findElement {value=post deleted, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\sayoojya\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59698}, goog:processID: 27024, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59698/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f9f5a53514d182965574ce4409d2a7a6]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='post deleted']"}
@@ -43,9 +43,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cedd98f1a51595bff9ed660ecb26beeb, findElement {value=post deleted, using=name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\sayoojya\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57103}, goog:processID: 3308, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57103/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cedd98f1a51595bff9ed660ecb26beeb
+Command: [f9f5a53514d182965574ce4409d2a7a6, findElement {value=post deleted, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\sayoojya\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59698}, goog:processID: 27024, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59698/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f9f5a53514d182965574ce4409d2a7a6
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -94,43 +94,43 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deletemsgDisplayTest -->
-        <test-method signature="allPostTest()[pri:4, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-26T23:40:05 IST" name="allPostTest" finished-at="2025-12-26T23:40:13 IST" duration-ms="8556" status="PASS">
+        <test-method signature="allPostTest()[pri:4, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-27T01:55:31 IST" name="allPostTest" finished-at="2025-12-27T01:55:43 IST" duration-ms="12102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allPostTest -->
-        <test-method signature="myPostTest()[pri:5, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-26T23:40:13 IST" name="myPostTest" finished-at="2025-12-26T23:40:16 IST" duration-ms="2648" status="PASS">
+        <test-method signature="myPostTest()[pri:5, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-27T01:55:43 IST" name="myPostTest" finished-at="2025-12-27T01:55:46 IST" duration-ms="2913" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myPostTest -->
-        <test-method signature="myActionsTest()[pri:6, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-26T23:40:16 IST" name="myActionsTest" finished-at="2025-12-26T23:40:52 IST" duration-ms="36362" status="PASS">
+        <test-method signature="myActionsTest()[pri:6, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-27T01:55:46 IST" name="myActionsTest" finished-at="2025-12-27T01:56:31 IST" duration-ms="44686" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myActionsTest -->
-        <test-method signature="categoryTest()[pri:7, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-26T23:40:52 IST" name="categoryTest" finished-at="2025-12-26T23:40:53 IST" duration-ms="1071" status="PASS">
+        <test-method signature="categoryTest()[pri:7, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-27T01:56:31 IST" name="categoryTest" finished-at="2025-12-27T01:56:32 IST" duration-ms="1763" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- categoryTest -->
-        <test-method signature="aboutUsTest()[pri:8, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-26T23:40:53 IST" name="aboutUsTest" finished-at="2025-12-26T23:40:54 IST" duration-ms="616" status="PASS">
+        <test-method signature="aboutUsTest()[pri:8, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-27T01:56:32 IST" name="aboutUsTest" finished-at="2025-12-27T01:56:33 IST" duration-ms="614" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aboutUsTest -->
-        <test-method signature="contactUsTest()[pri:9, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-26T23:40:54 IST" name="contactUsTest" finished-at="2025-12-26T23:41:35 IST" duration-ms="40692" status="FAIL">
+        <test-method signature="contactUsTest()[pri:9, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-27T01:56:33 IST" name="contactUsTest" finished-at="2025-12-27T01:57:14 IST" duration-ms="40733" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for alert to be present (tried for 40 second(s) with 500 milliseconds interval)
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\sayoojya\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57103}, goog:processID: 3308, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57103/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cedd98f1a51595bff9ed660ecb26beeb]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\sayoojya\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59698}, goog:processID: 27024, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59698/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f9f5a53514d182965574ce4409d2a7a6]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 40 second(s) with 500 milliseconds interval)
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\sayoojya\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57103}, goog:processID: 3308, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57103/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cedd98f1a51595bff9ed660ecb26beeb
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\sayoojya\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59698}, goog:processID: 27024, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59698/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f9f5a53514d182965574ce4409d2a7a6
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 at pages.AdminContactUs.sndBtn(AdminContactUs.java:56)
@@ -167,29 +167,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contactUsTest -->
-        <test-method signature="iconTest()[pri:10, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-26T23:41:35 IST" name="iconTest" finished-at="2025-12-26T23:41:36 IST" duration-ms="1200" status="FAIL">
+        <test-method signature="iconTest()[pri:10, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-27T01:57:14 IST" name="iconTest" finished-at="2025-12-27T01:57:16 IST" duration-ms="1227" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <a _ngcontent-tvy-c42="" href="#" target="_blank" class="contact-icon">...</a> is not clickable at point (1102, 275). Other element would receive the click: <li _ngcontent-tvy-c42="">...</li>
+              <![CDATA[element click intercepted: Element <a _ngcontent-hmr-c42="" href="#" target="_blank" class="contact-icon">...</a> is not clickable at point (1102, 559). Other element would receive the click: <li _ngcontent-hmr-c42="">...</li>
   (Session info: chrome=143.0.7499.170)
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cedd98f1a51595bff9ed660ecb26beeb, clickElement {id=f.9CDC7A22E0CF2D124C878E495DBD634C.d.6EE70800611F3A8AFDBD94FE35FF136F.e.448158}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\sayoojya\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57103}, goog:processID: 3308, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57103/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (cedd98f1a51595bff9ed660ecb26beeb)] -> xpath: //a[@class='contact-icon']]
-Session ID: cedd98f1a51595bff9ed660ecb26beeb]]>
+Command: [f9f5a53514d182965574ce4409d2a7a6, clickElement {id=f.FA308B465C543F3A419A630AEB333B6A.d.7EDEB67083353D4AB805AAE46F196917.e.334716}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\sayoojya\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59698}, goog:processID: 27024, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59698/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f9f5a53514d182965574ce4409d2a7a6)] -> xpath: //a[@class='contact-icon']]
+Session ID: f9f5a53514d182965574ce4409d2a7a6]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a _ngcontent-tvy-c42="" href="#" target="_blank" class="contact-icon">...</a> is not clickable at point (1102, 275). Other element would receive the click: <li _ngcontent-tvy-c42="">...</li>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a _ngcontent-hmr-c42="" href="#" target="_blank" class="contact-icon">...</a> is not clickable at point (1102, 559). Other element would receive the click: <li _ngcontent-hmr-c42="">...</li>
   (Session info: chrome=143.0.7499.170)
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cedd98f1a51595bff9ed660ecb26beeb, clickElement {id=f.9CDC7A22E0CF2D124C878E495DBD634C.d.6EE70800611F3A8AFDBD94FE35FF136F.e.448158}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\sayoojya\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57103}, goog:processID: 3308, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57103/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (cedd98f1a51595bff9ed660ecb26beeb)] -> xpath: //a[@class='contact-icon']]
-Session ID: cedd98f1a51595bff9ed660ecb26beeb
+Command: [f9f5a53514d182965574ce4409d2a7a6, clickElement {id=f.FA308B465C543F3A419A630AEB333B6A.d.7EDEB67083353D4AB805AAE46F196917.e.334716}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\sayoojya\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59698}, goog:processID: 27024, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59698/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f9f5a53514d182965574ce4409d2a7a6)] -> xpath: //a[@class='contact-icon']]
+Session ID: f9f5a53514d182965574ce4409d2a7a6
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -236,23 +236,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iconTest -->
-        <test-method signature="logOutTest()[pri:11, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-26T23:41:36 IST" name="logOutTest" finished-at="2025-12-26T23:41:36 IST" duration-ms="162" status="PASS">
+        <test-method signature="logOutTest()[pri:11, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-27T01:57:16 IST" name="logOutTest" finished-at="2025-12-27T01:57:16 IST" duration-ms="241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutTest -->
-        <test-method signature="invalidLoginTest()[pri:12, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-26T23:41:36 IST" name="invalidLoginTest" finished-at="2025-12-26T23:41:39 IST" duration-ms="2823" status="PASS">
+        <test-method signature="invalidLoginTest()[pri:12, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-27T01:57:16 IST" name="invalidLoginTest" finished-at="2025-12-27T01:57:28 IST" duration-ms="11721" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginTest -->
-        <test-method signature="emptyPassLogin()[pri:13, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-26T23:41:39 IST" name="emptyPassLogin" finished-at="2025-12-26T23:41:43 IST" duration-ms="3854" status="PASS">
+        <test-method signature="emptyPassLogin()[pri:13, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-27T01:57:28 IST" name="emptyPassLogin" finished-at="2025-12-27T01:57:34 IST" duration-ms="5707" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyPassLogin -->
-        <test-method signature="emptyfieldLogin()[pri:14, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-26T23:41:43 IST" name="emptyfieldLogin" finished-at="2025-12-26T23:41:45 IST" duration-ms="2335" status="PASS">
+        <test-method signature="emptyfieldLogin()[pri:14, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-27T01:57:34 IST" name="emptyfieldLogin" finished-at="2025-12-27T01:57:38 IST" duration-ms="4649" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyfieldLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-26T23:41:45 IST" name="tearDown" finished-at="2025-12-26T23:41:46 IST" duration-ms="562" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AdminTest@1ce24091]" started-at="2025-12-27T01:57:38 IST" name="tearDown" finished-at="2025-12-27T01:57:39 IST" duration-ms="1091" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

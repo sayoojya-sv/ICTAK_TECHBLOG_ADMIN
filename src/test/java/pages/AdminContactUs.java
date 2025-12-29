@@ -32,6 +32,7 @@ public class AdminContactUs {
 	//to send message with name email and message
 	public void inp_value(String eName, String eMail, String msg) {
 
+		// Using JavaScriptExecutor to force click as normal Selenium click fails in dynamic Angular UI
 	    JavascriptExecutor js = (JavascriptExecutor) driver;
 
 	    WebElement ename = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("name")));

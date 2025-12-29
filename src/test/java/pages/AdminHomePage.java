@@ -30,7 +30,7 @@ public class AdminHomePage {
 	    JavascriptExecutor js = (JavascriptExecutor) driver;
 	    WebElement edt = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[text()='Edit'])[1]")));
 	    js.executeScript("arguments[0].scrollIntoView(true);", edt); // Scroll the page until the Edit button comes into view
-	    js.executeScript("arguments[0].click();", edt);
+	    js.executeScript("arguments[0].click();", edt); //click the element forcefully, when overlap or xpath 
 	    
 	    WebElement subtn=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Submit']")));
 	    subtn.click();
@@ -40,7 +40,8 @@ public class AdminHomePage {
     
     public void clkDelete() {
     	
-    	JavascriptExecutor js = (JavascriptExecutor) driver;
+    	JavascriptExecutor js = (JavascriptExecutor) driver; //Using JavaScriptExecutor to force click as normal Selenium click fails in dynamic Angular UI
+
 	    WebElement delt = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[text()='Delete'])[1]")));
 	    js.executeScript("arguments[0].scrollIntoView(true);", delt); // Scroll the page until the delete button comes into view
 	    js.executeScript("arguments[0].click();", delt);

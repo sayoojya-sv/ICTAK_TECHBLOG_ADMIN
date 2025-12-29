@@ -30,7 +30,8 @@ public class AdminAllPost {
     public void clickEdit() {
 		
 		//For executing scroll function
-	    JavascriptExecutor js = (JavascriptExecutor) driver;
+	    JavascriptExecutor js = (JavascriptExecutor) driver;  // Using JavaScriptExecutor to force click as normal Selenium click fails in dynamic Angular UI
+
 	    WebElement edt = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[text()='Edit'])[1]")));
 	    js.executeScript("arguments[0].scrollIntoView(true);", edt); // Scroll the page until the Edit button comes into view
 	    js.executeScript("arguments[0].click();", edt);
