@@ -15,6 +15,7 @@ public class ScreenshotUtility {
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         File dest = new File("C:\\Users\\sayoojya\\OneDrive\\Desktop\\SDETCourse\\ICTAK_TECH_ADMIN_PROJECT\\ICTAK_TECHBLOG_ADMIN\\target\\screenshots" + testName + ".png");
         FileUtils.copyFile(src, dest);
+        
     }
 
 }
