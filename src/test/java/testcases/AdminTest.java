@@ -63,10 +63,10 @@ public class AdminTest extends TestBase{
 	@Test(priority=1)
 	public void loginTest() throws IOException {
 		ad_log.dropDown();
-	//	ad_log.loginEmail("admin");
-	//	ad_log.loginPass("1234");
-		ad_log.loginEmail(ExcelUtility.readExcel(0, 0));
-		ad_log.loginPass(ExcelUtility.readExcel(0, 1));
+		ad_log.loginEmail("admin");
+		ad_log.loginPass("1234");
+		//ad_log.loginEmail(ExcelUtility.readExcel(0, 0));
+		//ad_log.loginPass(ExcelUtility.readExcel(0, 1));
 		ad_log.subBtn();
 		Assert.assertTrue(log_assert.isAdminHomePageDisplayed());
 	}

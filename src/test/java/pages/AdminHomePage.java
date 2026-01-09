@@ -32,6 +32,8 @@ public class AdminHomePage {
 	    js.executeScript("arguments[0].scrollIntoView(true);", edt); // Scroll the page until the Edit button comes into view
 	    js.executeScript("arguments[0].click();", edt); //click the element forcefully, when overlap or xpath 
 	    
+	    
+	    
 	    WebElement subtn=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Submit']")));
 	    subtn.click();
 	    wait.until(ExpectedConditions.alertIsPresent()); //to click the popup message
