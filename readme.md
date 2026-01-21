@@ -2,7 +2,7 @@
 
 **Project Overview**
 
-This project is an end-to-end Automation Testing Framework developed using Selenium WebDriver, TestNG, and Maven. The framework follows the Page Object Model (POM) design pattern and automates functional test cases of a web-based blogging application.
+This project is an end-to-end Automation Testing Framework built using Selenium WebDriver, TestNG, and Maven, following the Page Object Model (POM) design pattern to automate functional test cases of a role-based Article Posting Web Application, where users submit articles for admin approval, trainers publish directly, and admins manage content moderation, workflows, and overall system functionality.
 
 **Tools and Technologies Used**
 
@@ -11,7 +11,6 @@ This project is an end-to-end Automation Testing Framework developed using Selen
 * Testing Framework: TestNG  
 * Build Tool: Maven  
 * Design Pattern: Page Object Model (POM)  
-*  Database Connectivity: JDBC  
 * Version Control: Git & GitHub
 
 
